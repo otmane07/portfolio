@@ -1,0 +1,59 @@
+/* start banner */ 
+.site-banner  {
+
+    height:  100%;
+    width:  100%;
+ 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+
+}
+.site-banner .banner-image {
+  height:  100%;
+  width: 100%;
+
+}
+.site-banner .img-fluid{
+    
+    padding-top: 250px;
+    padding-left: 130px;
+ 
+    
+    
+}
+
+.site-banner .site-title{
+    padding-top: 290px;
+    padding-left:50px;
+    
+
+    
+
+}
+.site-title h3::after{
+    content: " ";
+    height: 3px;
+    width: 18vw;
+    background: #383838;
+    display: inline-block;
+    margin-left: 5%;
+   
+}
+.site-title h1{
+    font-size: 35px;
+    padding-top: 8px;
+    padding-bottom:8px;
+}
+.site-title h2{
+    font-size: 25px;
+    padding-top: 8px;
+    padding-bottom:2px;
+}
+/* end banner */ 
+
+.button-container{
+   
+    padding-left: 330px;
+    padding-top: 100px;
+}

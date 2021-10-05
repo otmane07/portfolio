@@ -1,0 +1,236 @@
+
+<div class="section" id="contact">
+    <div class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
+      <div class="container">
+        <div class="cc-contact">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="card mb-0" data-aos="zoom-in">
+                <div class="h4 text-center title">Contactez-moi</div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card-body"> 
+                      <form 
+                      action="https://formspree.io/f/mwkazldk"
+                      method="POST" 
+                      #f="ngForm"
+                      (ngSubmit)="onSubmit(f)">
+                        <div class="flex flex-wrap">
+                          <div class="">
+                        
+                              <label
+                                class="
+                                  block
+                                  uppercase
+                                  text-blueGray-600 text-xs
+                                  font-bold
+                                  mb-2
+                                "
+                                for="nom"
+                              >
+                               <strong>Votre Nom </strong> 
+                              </label>
+                              <input
+                                required
+                                minlength="2"
+                                maxlength="100"
+
+                                [(ngModel)]="nom"
+                                #Nom="ngModel"
+                               
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                class="
+                                  form-control
+                                  px-3
+                                  py-3
+                                  placeholder-blueGray-300
+                                  text-blueGray-600
+                                  bg-white
+                                  rounded
+                                  text-sm
+                                  shadow
+                                  focus:outline-none focus:ring
+                                  w-full
+                                  ease-linear
+                                  transition-all
+                                  duration-150
+                                "
+                                [ngClass]="Nom.errors && Nom.touched?'border-red ':'border-default '"
+                              />
+                              <div
+                              class="text-danger mt-3 "
+                              *ngIf="Nom.touched && !Nom.valid"
+                            >
+                              <div *ngIf="Nom.errors?.required">
+                                Ce champ est obligatoire
+                              </div>
+                              <div *ngIf="Nom.errors?.minlength">
+                                Ce champ doit contenir plus de
+                                {{ Nom.errors?.minlength.requiredLength }} caractéres .
+                               
+                              </div>
+            
+                             
+                            </div>
+                              <br/>
+                          
+                              <label
+                              class="
+                                block
+                                uppercase
+                                text-blueGray-600 text-xs
+                                font-bold
+                                mb-2
+                              "
+                              for="email"
+                            >
+                             <strong>Votre Email    </strong>
+                            </label>
+                            <input
+                              required
+                              minlength="3"
+                              maxlength="60"
+                              type="text"
+                              id="email"
+                              name="lastname"
+                              #Email="ngModel"
+                              [(ngModel)]="email"
+                              class="
+                                form-control
+                                px-3
+                                py-3
+                                placeholder-blueGray-300
+                                text-blueGray-600
+                                bg-white
+                                rounded
+                                text-sm
+                                shadow
+                                focus:outline-none focus:ring
+                                w-full
+                                ease-linear
+                                transition-all
+                                duration-150
+                                
+                              "
+                              [ngClass]="Email.errors && Email.touched?'border-red ':'border-default '"
+                            />
+                            <div
+                            class="text-danger mt-3 "
+                            *ngIf="Email.touched && !Email.valid"
+                          >
+                            <div *ngIf="Email.errors?.required">
+                              Ce champ est obligatoire
+                              
+                            </div>
+                            <div *ngIf="Email.errors?.minlength">
+                              Ce champ doit contenir plus de
+                              {{ Email.errors?.minlength.requiredLength }} caractéres .
+                             
+                            </div>
+                          
+                           
+                           
+                          </div>
+                            <br/>
+                            <label
+                            class="
+                              block
+                              uppercase
+                              text-blueGray-600 text-xs
+                              font-bold
+                              mb-2
+                            "
+                            for="mes"
+                          >
+                            <strong>Votre Message</strong>
+                          </label>
+                          <textarea
+                            required
+                            maxlength="300"
+                            minlength="5"
+                            #Message="ngModel"
+                            [(ngModel)]="message"
+                            type="text"
+                            id="mes"
+                            name="message"
+                            class="
+                              
+                              form-control
+                              px-3
+                              py-3
+                              placeholder-blueGray-300
+                              text-blueGray-600
+                              bg-white
+                              rounded
+                              text-sm
+                              shadow
+                              focus:outline-none focus:ring
+                              w-full
+                              ease-linear
+                              transition-all
+                              duration-150
+                            "
+                            [ngClass]="Message.errors && Message.touched?'border-red ':'border-default '"
+                          >
+                       
+                          </textarea>
+                          <div
+                          class="text-danger mt-3 "
+                          *ngIf="Message.touched && !Message.valid"
+                        >
+                          <div *ngIf="Message.errors?.required">
+                            Ce champ est obligatoire
+                          </div>
+                          <div *ngIf="Message.errors?.minlength">
+                            Ce champ doit contenir plus de
+                            {{ Message.errors?.minlength.requiredLength }} caractéres .
+                           
+                          </div>
+        
+                         
+                        </div>
+                          <br/>
+                          <button class="btn btn-danger" [disabled]="!f.valid" (click)="onSucces()" type="submit" style="background-color: #7F00BB;">Send</button>
+                              
+                            </div>
+                          </div>
+         
+                        </form>
+                        
+ 
+
+    
+   
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                        <p class="mb-0">
+                            <strong>Numéro de télephone</strong>
+                        </p>
+                        <p class="pb-2">+212 682845557</p>
+                        <p class="mb-0">
+                            <strong>Email</strong>
+                        </p>
+                        <p>otmanekhouna07@gmail.com</p>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+
+ 
+
+  

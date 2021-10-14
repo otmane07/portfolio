@@ -4,16 +4,17 @@ $colorV : #7F00BB;
 
 }
 
-.contenu1 p{
-  
-    padding-top: 20px;
-    padding-left: 50px;
-}
-.contenu2{
-    padding-left: 100px;
-    padding-bottom:20px;
+//dans se cas il faut pas centrer le div mais il faut centrer le text dedan strong est dans 
+//ce cas ces des c'est de type alligne (l'autre type est type bloc est qui prend tout l'espace autoriser
+
+//textallign s'apliquer sur les paragraphes
+.contenu21{
+
+    text-align: center;
 }
 .contenu3{
     padding-top: 1px;
     padding-left:50PX;
 }
+
+//pour centrer un boutton on utilise text-align: center; mais danns le div pére
